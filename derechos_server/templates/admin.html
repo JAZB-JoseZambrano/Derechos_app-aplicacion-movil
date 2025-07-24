@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Panel de Administración</title>
+</head>
+<body>
+    <h1>Panel de PDFs</h1>
+
+    <!-- Si el flask creado en admin_panel.py envia una variable llamda 
+     "mensaje" se mostrara un texto en pantalla -->
+    {% if mensaje %}
+        <p><strong>{{ mensaje }}</strong></p>
+    {% endif %}
+
+    <!-- En este apartado se podran subir PDFS usando el boton
+     "subir" lo cual usaremos
+     (enctype="multipart/form-data") necesario para subir archivos
+     tambien usaremos (accept="application/pdf") para que solo permita 
+     subir archivos pdfs -->
+    <h2>Subir nuevo PDF</h2>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="application/pdf" required>
+        <button type="submit">Subir</button>
+    </form>
+
+    <!-- En este apartado se mostraran una lista de todos los pdfs 
+     disponibles, cada pdf tiene un enlane al cual darle click se podran 
+     viasualizar en una nueva pestaña, como tambien un boton para poder
+     eliminar un PDFS previamente subido, al darle click al boton 
+     "eliminar" mostrara un mensaje en pantalla de confirmacion
+     sea el caso que si se eliminara el pdf -->
+    <h2>Archivos disponibles</h2>
+    <ul>
+        {% for archivo in archivos %}
+            <li>
+                <a href="/uploads/pdfs/{{ archivo }}" target="_blank">{{ archivo }}</a>
+                <form method="post" style="display:inline;" onsubmit="return confirm('¿Estás seguro de eliminar este archivo?');">
+                    <input type="hidden" name="delete" value="{{ archivo }}">
+                    <button type="submit">Eliminar</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <!-- Al darle click a enlace se cerrara la sesion y lo redirrecionara
+     a la pantalla de inicio de sesion -->
+    <p><a href="/logout">Cerrar sesión</a></p>
+</body>
+</html>
