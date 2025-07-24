@@ -9,8 +9,8 @@ Esta aplicación móvil, desarrollada con Flutter, tiene como objetivo difundir 
 
 # 🧱 Estructura del Proyecto
  # Frontend (Flutter)
-- pantallas/: contiene las distintas pantallas de la app, cada una cargando un PDF específico.
-- main.dart: punto de entrada de la aplicación, configuración de rutas y temas.
+- /derechos_app/lib/screens: contiene las distintas pantallas de la app, cada una cargando un PDF específico.
+- /derechos_app/lib/main.dart: punto de entrada de la aplicación, configuración de rutas y temas.
 - Uso de la librería flutter_cached_pdfview para cargar PDFs desde URLs.
  # Backend (Flask)
 - app.py: servidor principal, permite:
@@ -18,4 +18,4 @@ Esta aplicación móvil, desarrollada con Flutter, tiene como objetivo difundir 
     - Subir nuevos archivos PDF desde el panel administrador.
     - Eliminar archivos PDF existentes.
 - Rutas protegidas y con CORS habilitado para acceso desde la app Flutter.
-- Carpeta /uploads/pdfs/: almacena los documentos visibles desde la app.
+- Carpeta /derechos_server/uploads/pdfs/: almacena los documentos visibles desde la app.
