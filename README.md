@@ -8,11 +8,11 @@ Esta aplicación móvil, desarrollada con Flutter, tiene como objetivo difundir 
 - Integración con un backend en Flask para la gestión y visualización de archivos.
 
 # 🧱 Estructura del Proyecto
-# Frontend (Flutter)
+ # Frontend (Flutter)
 - pantallas/: contiene las distintas pantallas de la app, cada una cargando un PDF específico.
 - main.dart: punto de entrada de la aplicación, configuración de rutas y temas.
 - Uso de la librería flutter_cached_pdfview para cargar PDFs desde URLs.
-# Backend (Flask)
+ # Backend (Flask)
 - app.py: servidor principal, permite:
     - Servir archivos PDF almacenados en una carpeta local.
     - Subir nuevos archivos PDF desde el panel administrador.
