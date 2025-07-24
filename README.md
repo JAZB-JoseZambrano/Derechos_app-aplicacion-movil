@@ -4,7 +4,7 @@ Esta aplicación móvil, desarrollada con Flutter, tiene como objetivo difundir 
 
 # 🎯 Funcionalidades principales
 - Visualización rápida y sencilla de documentos PDF relevantes.
-- Navegación intuitiva entre distintas secciones legales.
+- Navegación intuitiva entre distintas pantallas.
 - Integración con un backend en Flask para la gestión y visualización de archivos.
 
 # 🧱 Estructura del Proyecto
