@@ -10,7 +10,7 @@ class PantallaPDFConstitucion extends StatelessWidget {
   //a nuestro servidor, el cual debe esta ativo para que se
   //visualize el pdf en el app.
   final String urlPDF =
-      'http://192.168.200.43:5000/uploads/pdfs/constitucion.pdf';
+      'http://app.capacitacioncontinua.info/uploads/pdfs/constitucion.pdf';
 
   //En este apartado se encarga de verificar la peticion,
   //si el servidor responde con el codigo "200" significa

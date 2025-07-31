@@ -80,7 +80,7 @@ class PantallaInicio extends StatelessWidget {
                   //haciendo click a navegar hacia la subpantalla definida como
                   //"PantallaPDFCodigoTrabajo"
                   ElevatedButton.icon(
-                    icon: const Icon(Icons.work),
+                    icon: const Icon(Icons.picture_as_pdf),
                     label: const Text('Código del Trabajo'),
                     onPressed: () {
                       Navigator.push(
