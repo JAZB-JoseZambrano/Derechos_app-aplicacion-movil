@@ -1,4 +1,4 @@
-# 📱 App de Derechos Laborales y Sociales del Ecuador
+# 📱 APLICACIÓN DE FIDELIZACIÓN CON PUNTOS Y RECOMPENSAS PARA PYMES
 
 Esta aplicación móvil, desarrollada con Flutter, tiene como objetivo difundir los derechos laborales y sociales de los ciudadanos ecuatorianos mediante el acceso a documentos oficiales en formato PDF, como la Constitución, el Código del Trabajo y más.
 
